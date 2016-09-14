@@ -6,7 +6,7 @@
       "openshift.io/generated-by": "OpenShiftNewApp"
     },
     "creationTimestamp": null,
-    "generation": 1,
+    "generation": 2,
     "labels": {
       "app": "ruby-hello-world",
       "openshift.io/repository": "to_qe",
@@ -46,7 +46,7 @@
       "spec": {
         "containers": [
           {
-            "image": "ruby-hello-world:latest",
+            "image": "docker.io/jupierce/ruby-hello-world:master_1473888835332",
             "imagePullPolicy": "Always",
             "name": "ruby-hello-world",
             "ports": [
@@ -73,6 +73,9 @@
     ]
   },
   "status": {
-    "observedGeneration": 1
+    "availableReplicas": 1,
+    "observedGeneration": 2,
+    "replicas": 1,
+    "updatedReplicas": 1
   }
 }
