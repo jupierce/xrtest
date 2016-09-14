@@ -46,7 +46,7 @@
       "spec": {
         "containers": [
           {
-            "image": "docker.io/jupierce/rr:master_1473874210937",
+            "image": "docker.io/jupierce/rr:master_1473874932185",
             "imagePullPolicy": "Always",
             "name": "rr",
             "ports": [
