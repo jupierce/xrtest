@@ -1,1 +1,80 @@
-{"apiVersion":"v1","kind":"DeploymentConfig","metadata":{"annotations":{"openshift.io/generated-by":"OpenShiftNewApp"},"creationTimestamp":null,"generation":2,"labels":{"app":"ruby-hello-world","monkey":"goodbye"},"name":"ruby-hello-world"},"spec":{"replicas":1,"selector":{"app":"ruby-hello-world","deploymentconfig":"ruby-hello-world"},"strategy":{"resources":{},"rollingParams":{"intervalSeconds":1,"maxSurge":"25%","maxUnavailable":"25%","timeoutSeconds":600,"updatePeriodSeconds":1},"type":"Rolling"},"template":{"metadata":{"annotations":{"openshift.io/container.ruby-hello-world.image.entrypoint":"[\"container-entrypoint\",\"/bin/sh\",\"-c\",\"$STI_SCRIPTS_PATH/usage\"]","openshift.io/generated-by":"OpenShiftNewApp"},"creationTimestamp":null,"labels":{"app":"ruby-hello-world","deploymentconfig":"ruby-hello-world"}},"spec":{"containers":[{"image":"docker.io/jupierce/ruby-hello-world:v2_1473875665138","imagePullPolicy":"Always","name":"ruby-hello-world","ports":[{"containerPort":8080,"protocol":"TCP"}],"resources":{},"terminationMessagePath":"/dev/termination-log"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","securityContext":{},"terminationGracePeriodSeconds":30}},"test":false,"triggers":[{"type":"ConfigChange"}]},"status":{"availableReplicas":1,"observedGeneration":2,"replicas":1,"updatedReplicas":1}}
+{
+  "apiVersion": "v1",
+  "kind": "DeploymentConfig",
+  "metadata": {
+    "annotations": {
+      "openshift.io/generated-by": "OpenShiftNewApp"
+    },
+    "creationTimestamp": null,
+    "generation": 2,
+    "labels": {
+      "app": "ruby-hello-world",
+      "monkey": "goodbye"
+    },
+    "name": "ruby-hello-world"
+  },
+  "spec": {
+    "replicas": 1,
+    "selector": {
+      "app": "ruby-hello-world",
+      "deploymentconfig": "ruby-hello-world"
+    },
+    "strategy": {
+      "resources": {},
+      "rollingParams": {
+        "intervalSeconds": 1,
+        "maxSurge": "25%",
+        "maxUnavailable": "25%",
+        "timeoutSeconds": 600,
+        "updatePeriodSeconds": 1
+      },
+      "type": "Rolling"
+    },
+    "template": {
+      "metadata": {
+        "annotations": {
+          "openshift.io/container.ruby-hello-world.image.entrypoint": "[\"container-entrypoint\",\"/bin/sh\",\"-c\",\"$STI_SCRIPTS_PATH/usage\"]",
+          "openshift.io/generated-by": "OpenShiftNewApp"
+        },
+        "creationTimestamp": null,
+        "labels": {
+          "app": "ruby-hello-world",
+          "deploymentconfig": "ruby-hello-world"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "image": "docker.io/jupierce/ruby-hello-world:v2_1473875746974",
+            "imagePullPolicy": "Always",
+            "name": "ruby-hello-world",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "protocol": "TCP"
+              }
+            ],
+            "resources": {},
+            "terminationMessagePath": "/dev/termination-log"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Always",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30
+      }
+    },
+    "test": false,
+    "triggers": [
+      {
+        "type": "ConfigChange"
+      }
+    ]
+  },
+  "status": {
+    "availableReplicas": 1,
+    "observedGeneration": 2,
+    "replicas": 1,
+    "updatedReplicas": 1
+  }
+}
