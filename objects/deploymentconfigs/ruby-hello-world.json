@@ -12,7 +12,8 @@
       "openshift.io/repository": "to_qe",
       "openshift.io/repository-version": "master"
     },
-    "name": "ruby-hello-world"
+    "name": "ruby-hello-world",
+    "namespace": "myproject"
   },
   "spec": {
     "replicas": 1,
@@ -46,7 +47,7 @@
       "spec": {
         "containers": [
           {
-            "image": "docker.io/jupierce/ruby-hello-world:master_1473944241559",
+            "image": "docker.io/jupierce/ruby-hello-world:master_1473944433567",
             "imagePullPolicy": "Always",
             "name": "ruby-hello-world",
             "ports": [
