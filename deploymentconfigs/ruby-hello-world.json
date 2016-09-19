@@ -6,7 +6,7 @@
       "openshift.io/generated-by": "OpenShiftNewApp"
     },
     "creationTimestamp": null,
-    "generation": 3,
+    "generation": 2,
     "labels": {
       "app": "ruby-hello-world",
       "openshift.io/repository": "to_qe",
@@ -46,7 +46,7 @@
       "spec": {
         "containers": [
           {
-            "image": "docker.io/jupierce/ruby-hello-world:master_1474306037434",
+            "image": "docker.io/jupierce/ruby-hello-world:master_1474308590934",
             "imagePullPolicy": "Always",
             "name": "ruby-hello-world",
             "ports": [
@@ -56,28 +56,13 @@
               }
             ],
             "resources": {},
-            "terminationMessagePath": "/dev/termination-log",
-            "volumeMounts": [
-              {
-                "mountPath": "/etc/secret-volume",
-                "name": "secret-volume",
-                "readOnly": true
-              }
-            ]
+            "terminationMessagePath": "/dev/termination-log"
           }
         ],
         "dnsPolicy": "ClusterFirst",
         "restartPolicy": "Always",
         "securityContext": {},
-        "terminationGracePeriodSeconds": 30,
-        "volumes": [
-          {
-            "name": "secret-volume",
-            "secret": {
-              "secretName": "test-secret"
-            }
-          }
-        ]
+        "terminationGracePeriodSeconds": 30
       }
     },
     "test": false,
@@ -89,7 +74,7 @@
   },
   "status": {
     "availableReplicas": 1,
-    "observedGeneration": 3,
+    "observedGeneration": 2,
     "replicas": 1,
     "updatedReplicas": 1
   }
