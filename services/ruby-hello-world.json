@@ -11,12 +11,9 @@
 			"openshift.io/repository": "to_qe",
 			"openshift.io/repository-version": "master"
 		},
-		"name": "ruby-hello-world",
-		"namespace": "myproject"
+		"name": "ruby-hello-world"
 	},
 	"spec": {
-		"clusterIP": "172.30.154.184",
-		"portalIP": "172.30.154.184",
 		"ports": [
 			{
 				"name": "8080-tcp",
