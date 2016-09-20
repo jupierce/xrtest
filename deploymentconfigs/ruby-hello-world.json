@@ -46,7 +46,7 @@
 			"spec": {
 				"containers": [
 					{
-						"image": "docker.io/jupierce/ruby-hello-world:v2_1474378827484",
+						"image": "docker.io/jupierce/ruby-hello-world:v2_1474392160807",
 						"imagePullPolicy": "Always",
 						"name": "ruby-hello-world",
 						"ports": [
