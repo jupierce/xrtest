@@ -10,8 +10,7 @@
 		"labels": {
 			"app": "ruby-hello-world",
 			"openshift.io/repository": "to_qe",
-			"openshift.io/repository-version": "v1",
-			"mylabel" : "origvalue"
+			"openshift.io/repository-version": "v1"
 		},
 		"name": "ruby-hello-world"
 	},
@@ -47,7 +46,7 @@
 			"spec": {
 				"containers": [
 					{
-						"image": "docker.io/jupierce/ruby-hello-world:v1_1474398271935",
+						"image": "docker.io/jupierce/ruby-hello-world:v1_1474484202868",
 						"imagePullPolicy": "Always",
 						"name": "ruby-hello-world",
 						"ports": [
@@ -74,9 +73,9 @@
 		]
 	},
 	"status": {
-		"availableReplicas": 1,
 		"observedGeneration": 2,
 		"replicas": 1,
+		"unavailableReplicas": 1,
 		"updatedReplicas": 1
 	}
 }
