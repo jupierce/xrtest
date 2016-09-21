@@ -10,7 +10,8 @@
 		"labels": {
 			"app": "ruby-hello-world",
 			"openshift.io/repository": "to_qe",
-			"openshift.io/repository-version": "v1"
+			"openshift.io/repository-version": "v1",
+			"mylabel" : "origvalue"
 		},
 		"name": "ruby-hello-world"
 	},
